@@ -63,8 +63,6 @@ class EmployeeAdmin(admin.ModelAdmin):
 
 list_display=('eid', 'name', 'salary', 'age', 'email')
 ## OUTPUT:
-<img width="1917" height="916" alt="Screenshot 2025-12-01 154900" src="https://github.com/user-attachments/assets/733024ba-5191-4baf-b497-a1495139237c" />
-
-
+<img width="1920" height="1080" alt="orm" src="https://github.com/user-attachments/assets/cfacdb8a-183e-4fcd-861f-8d22efa3fabc" />
 ## RESULT:
 The program for implementing simple webserver is executed successfully.

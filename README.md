@@ -56,7 +56,9 @@ body {
 <body style="background-color:black ; overflow:hidden;">
     <h1 style="position:absolute; left: 70px; top: 50px; color:white; font-size:48px; "> LAP SPECIFICAATIONS </h1>
     <p  style="position:absolute; left: 70px; top: 400px; color:white; font-size:24px; width:800px;">
-      Device name	TMP215-75-G2 <br>Processor	Intel(R) Core(TM) Ultra 5 125H (1.20 GHz)<br> Installed RAM	16.0 GB (15.5 GB usable)<br>Device ID	E3F06795-1915-4187-8C56-F3F3634559FF<br>Product ID	00342-42784-08492-AAOEM<br>System type	64-bit operating system, x64-based processor<br>Pen and touch	No pen or touch input is available for this display
+      Device name	TMP215-75-G2 <br>Processor	Intel(R) Core(TM) Ultra 5 125H (1.20 GHz)<br> Installed RAM	16.0 GB (15.5 GB
+      usable)<br>Device ID	E3F06795-1915-4187-8C56-F3F3634559FF<br>Product ID	00342-42784-08492-AAOEM<br>System type	64
+      bit operating system, x64-based processor<br>Pen and touch	No pen or touch input is available for this display
     </p>
 </body>
 </html>

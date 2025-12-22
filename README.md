@@ -36,33 +36,45 @@ Start the server script and check for errors.
 Open a browser and navigate to http://127.0.0.1:8000 (or the assigned port).
 
 ## PROGRAM:
-admin.py
+from http.server import HTTPServer,BaseHTTPRequestHandler
+content ="""
+<!DOCTYPE html>
+<html>
+<head>
+  <title> SIMPLE SERVER  tharun</title>
+  <style>
+    *{
+            font-family: 'Times New Roman';
+        }
 
-from django.contrib import admin
+body {
+  font-family: 'MyFont', sans-serif;
+}
+  </style>
 
-from models import Employee, EmployeeAdmin admin.site.register(Employee, EmployeeAdmin)
-models.py
+</head>
+<body style="background-color:black ; overflow:hidden;">
+    <h1 style="position:absolute; left: 70px; top: 50px; color:white; font-size:48px; "> LAP SPECIFICAATIONS </h1>
+    <p  style="position:absolute; left: 70px; top: 400px; color:white; font-size:24px; width:800px;">
+      Device name	TMP215-75-G2 <br>Processor	Intel(R) Core(TM) Ultra 5 125H (1.20 GHz)<br> Installed RAM	16.0 GB (15.5 GB usable)<br>Device ID	E3F06795-1915-4187-8C56-F3F3634559FF<br>Product ID	00342-42784-08492-AAOEM<br>System type	64-bit operating system, x64-based processor<br>Pen and touch	No pen or touch input is available for this display
+    </p>
+</body>
+</html>
 
-from django.db import models
-
-from django.contrib import admin
-
-class Employee (models. Model):
-
-eid-models.CharField(max_length=20, primary_key="eid")
-
-name=models.CharField(max_length=100)
-
-salary models. IntegerField()
-
-age models. IntegerField()
-
-email-models. EmailField()
-
-class EmployeeAdmin(admin.ModelAdmin):
-
-list_display=('eid', 'name', 'salary', 'age', 'email')
+"""
+class MyServer(BaseHTTPRequestHandler):
+    def do_GET(self):
+        print("Get request received...")
+        self.send_response(200)
+        self.send_header("content-type", "text/html")
+        self.end_headers()
+        self.wfile.write(content.encode())
+print("This is my webserver")
+server_address =('',8000)
+httpd = HTTPServer(server_address,MyServer)
+httpd.serve_forever()
 ## OUTPUT:
-<img width="1920" height="1080" alt="orm" src="https://github.com/user-attachments/assets/cfacdb8a-183e-4fcd-861f-8d22efa3fabc" />
+<img width="1919" height="1079" alt="520129986-26f7782f-ee56-4234-92a0-f598feed6687" src="https://github.com/user-attachments/assets/a395058d-1e98-4e3c-a2fa-700428e024a6" />
+
 ## RESULT:
 The program for implementing simple webserver is executed successfully.
